@@ -15,7 +15,6 @@ class DataResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'            => $this->id,
             'project_name'  => $this->stepone->project_name,
             'project_desc'  => $this->stepone->project_desc,
             'client'        => $this->stepone->client,
